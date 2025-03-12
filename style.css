@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --brown-color: #610000;
+  --sand-color: #fff9f7;
+}
+body {
+  background-color: var(--sand-color);
+  font-family: "Jost", sans-serif;
+}
+.header-container {
+  background-color: var(--brown-color);
+  width: 100%;
+}
+.logo {
+  width: 80px;
+}
