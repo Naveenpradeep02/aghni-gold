@@ -11,7 +11,14 @@ body {
   font-family: "Jost", sans-serif;
 }
 .hero {
-  background: url(./img/front-view-indian-man-posing-studio.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.642)),
+    url(./img/Background-Image-Aghni-Gold.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+.hero img {
+  height: 480px;
 }
 .header-container {
   background-color: var(--brown-color);
