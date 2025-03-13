@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --brown-color: #610000;
+  --brown-color: #591411;
   --sand-color: #fff9f7;
   --gold-color-light: #eba536;
-  --gold-color: #eba536;
+  /* --gold-color: #eba536; */
+  --gold-color: #f8d55a;
 }
 body {
   background-color: var(--sand-color);
@@ -173,6 +174,9 @@ a {
   left: -14px;
 }
 @media screen and (max-width: 600px) {
+  .hero {
+    height: 100%;
+  }
   .timeline {
     margin: 50px auto;
   }
