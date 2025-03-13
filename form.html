@@ -89,8 +89,17 @@
           };
 
           try {
+            // First, make a GET request to handle CORS preflight
+            await fetch(
+              "https://script.google.com/macros/s/AKfycbz8bbk2Pd0s-rUmfN-7euVI2NVy3GnUlOLgX9sXlbHvlhxM0XXhwj8anFVn7P444RjEOQ/exec",
+              {
+                method: "GET",
+              }
+            );
+
+            // Now, send the actual POST request
             const response = await fetch(
-              "https://script.google.com/macros/s/AKfycbwcmpGGkP8TiVD_-LXAZ11mWMjGj4ZHDKdYpH53uMvg6zqcs-sh3zVUxWD5aMsLhuLg_A/exec",
+              "https://script.google.com/macros/s/AKfycbz8bbk2Pd0s-rUmfN-7euVI2NVy3GnUlOLgX9sXlbHvlhxM0XXhwj8anFVn7P444RjEOQ/exec",
               {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -111,6 +120,26 @@
             alert("❌ Network error. Please try again.");
           }
         });
+
+      // fetch(
+      //   "https://script.google.com/macros/s/AKfycbzT045fSxIp84N6H1_WcsePNpJYSeUBgMCGYenNxSvhHmnLxRwv1nN6nJqxUreQER2s/exec",
+      //   {
+      //     method: "POST",
+      //     mode: "no-cors", // Allows CORS request
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({
+      //       name: "Naveen",
+      //       phone: "8870686660",
+      //       location: "Chennai",
+      //       gold: 1,
+      //     }),
+      //   }
+      // )
+      //   .then((response) => response.json())
+      //   .then((data) => console.log(data))
+      //   .catch((error) => console.error("Error:", error));
     </script>
   </body>
 </html>
