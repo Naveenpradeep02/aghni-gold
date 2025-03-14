@@ -42,3 +42,6 @@ setTimeout(() => {
 const closeForm = () => {
   document.getElementById("consultationForm").classList.add("hidden");
 };
+const openForm = () => {
+  document.getElementById("consultationForm").classList.remove("hidden");
+};
