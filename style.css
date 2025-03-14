@@ -45,6 +45,9 @@ a {
 .heading-color {
   color: #610000;
 }
+.heading-back {
+  background: #610000;
+}
 .gold-color {
   color: var(--gold-color);
 }
