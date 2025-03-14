@@ -45,3 +45,62 @@ const closeForm = () => {
 const openForm = () => {
   document.getElementById("consultationForm").classList.remove("hidden");
 };
+
+document
+  .getElementById("userForm")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbwAbpLeMVf-wq0-Tg2Kgi3WIsY5G-TrIB9s6WHBFO7_gJiqO_CTFY7LXNjlDzdCApVSXQ/exec ",
+        {
+          method: "POST",
+          body: formData, // Use FormData for proper form submission
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        alert("✅ Form submitted successfully!");
+        document.getElementById("userForm").reset();
+      } else {
+        alert(`⚠️ Error: ${result.message}`);
+      }
+    } catch (error) {
+      console.error("Fetch Error:", error);
+      alert("❌ Network error. Please try again.");
+    }
+  });
+document
+  .getElementById("userForm2")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbwAbpLeMVf-wq0-Tg2Kgi3WIsY5G-TrIB9s6WHBFO7_gJiqO_CTFY7LXNjlDzdCApVSXQ/exec ",
+        {
+          method: "POST",
+          body: formData, // Use FormData for proper form submission
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.status === "success") {
+        alert("✅ Form submitted successfully!");
+        document.getElementById("userForm").reset();
+      } else {
+        alert(`⚠️ Error: ${result.message}`);
+      }
+    } catch (error) {
+      console.error("Fetch Error:", error);
+      alert("❌ Network error. Please try again.");
+    }
+  });

@@ -59,16 +59,20 @@
         </div>
         <div class="box2 md:w-1/2 relative grid place-items-center">
           <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-semibold text-center heading-color mb-4">
-              Get Free Consultation
+            <h2 class="text-2xl font-semibold text-center heading-color mb-2">
+              Fill This Form
             </h2>
+            <h2 class="text-sm font-semibold text-center heading-color mb-4">
+              Get Instant Cash For Your Gold At Today's Market Price
+            </h2>
+
             <form id="userForm" class="pt-14 md:pt-0">
               <div class="mb-4">
                 <label class="block text-gray-700">Name</label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
+                  id="Name"
+                  name="Name"
                   required
                   class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 />
@@ -78,8 +82,8 @@
                 <label class="block text-gray-700">Phone Number</label>
                 <input
                   type="number"
-                  id="phone"
-                  name="phone"
+                  id="PhoneNumber"
+                  name="Phone Number"
                   required
                   class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 />
@@ -88,8 +92,8 @@
               <div class="mb-4">
                 <label class="block text-gray-700">Location</label>
                 <select
-                  id="location"
-                  name="location"
+                  id="Location"
+                  name="Location"
                   class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 >
                   <option value="" selected disabled>Select a location</option>
@@ -195,16 +199,27 @@
               <div class="mb-4">
                 <label class="block text-gray-700">How much Gram?</label>
                 <select
-                  id="gold"
-                  name="gold"
+                  id="How many Grams?"
+                  name="How many Grams?"
                   class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
                 >
+                  <option value="" selected disabled>Select a Gram</option>
+
                   <option value="8Gram - 50Gram">8Gram - 50Gram</option>
                   <option value=" 50Gram & Above">50Gram & Above</option>
                   <option value="100 Gram &Above">100 Gram & Above</option>
                 </select>
               </div>
-
+              <div class="mb-4">
+                <label class="block text-gray-700">Comments</label>
+                <input
+                  type="text"
+                  id="Comments"
+                  name="Comments"
+                  required
+                  class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                />
+              </div>
               <button
                 type="submit"
                 class="w-full heading-back text-white py-2 rounded-lg"
@@ -1202,15 +1217,16 @@
       </div>
     </div>
     <!-- footer -->
-    <footer class="w-full text-center mb-32">
-      @Copyright 2025 | <a href="#">Aghni gold</a> | Site Developed By |
+    <footer class="w-full text-center mb-32 relative z-50">
+      @Copyright 2025 | <a href="https://aghnigold.com/">Aghni gold</a> | Site
+      Developed By |
       <a href="https://dgrowmarketing.com/" target="_blank"
         >D-Grow Marketing Agency</a
       >
     </footer>
     <!-- overlay cta section -->
 
-    <div id="fixedSection" class="fixed z-50 bottom-0 w-full hidden-section">
+    <div id="fixedSection" class="fixed z-40 bottom-0 w-full hidden-section">
       <div
         class="btn p-1 md:px-24 flex align-middle justify-between text-sm md:text-xl"
       >
@@ -1241,17 +1257,22 @@
       <div class="form-img hidden md:block">
         <img src="./img/bg-3.png" alt="" />
       </div>
+
       <div class="w-full max-w-md bg-white p-6 rounded-lg shadow-md relative">
-        <h2 class="text-2xl font-semibold text-center heading-color mb-4">
-          Get Free Consultation
+        <h2 class="text-2xl font-semibold text-center heading-color mb-2">
+          Fill This Form
         </h2>
-        <form id="userForm">
+        <h2 class="text-sm font-semibold text-center heading-color mb-4">
+          Get Instant Cash For Your Gold At Today's Market Price
+        </h2>
+
+        <form id="userForm2" class="pt-14 md:pt-0">
           <div class="mb-4">
             <label class="block text-gray-700">Name</label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="Name"
+              name="Name"
               required
               class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
@@ -1260,9 +1281,9 @@
           <div class="mb-4">
             <label class="block text-gray-700">Phone Number</label>
             <input
-              type="number"
-              id="phone"
-              name="phone"
+              type="Number"
+              id="Phone Number"
+              name="Phone Number"
               required
               class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
@@ -1271,10 +1292,11 @@
           <div class="mb-4">
             <label class="block text-gray-700">Location</label>
             <select
-              id="location"
-              name="location"
+              id="Location"
+              name="Location"
               class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
             >
+              <option value="" selected disabled>Select a location</option>
               <option value="T.Nagar">T.Nagar</option>
               <option value="Anna Nagar">Anna Nagar</option>
               <option value="Adyar">Adyar</option>
@@ -1375,18 +1397,29 @@
             </select>
           </div>
           <div class="mb-4">
-            <label class="block text-gray-700">Location</label>
+            <label class="block text-gray-700">How much Gram?</label>
             <select
-              id="gold"
-              name="gold"
+              id="How many Grams?"
+              name="How many Grams?"
               class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
             >
+              <option value="" selected disabled>Select a Gram</option>
+
               <option value="8Gram - 50Gram">8Gram - 50Gram</option>
               <option value=" 50Gram & Above">50Gram & Above</option>
               <option value="100 Gram &Above">100 Gram & Above</option>
             </select>
           </div>
-
+          <div class="mb-4">
+            <label class="block text-gray-700">Comments</label>
+            <input
+              type="text"
+              id="Comments"
+              name="Comments"
+              required
+              class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+          </div>
           <button
             type="submit"
             class="w-full heading-back text-white py-2 rounded-lg"
@@ -1415,36 +1448,6 @@
     </div>
     <!-- js -->
     <script src="./script.js"></script>
-    <script>
-      document
-        .getElementById("userForm")
-        .addEventListener("submit", async function (event) {
-          event.preventDefault();
-
-          const formData = new FormData(this);
-
-          try {
-            const response = await fetch(
-              "https://script.google.com/macros/s/AKfycbwumhApK9cLrTcHhczUjXrG0CVt_18ZlQb3qQX-C1Xm4WghKIbxwxLCJr3AouWVbT3j0g/exec",
-              {
-                method: "POST",
-                body: formData, // Use FormData for proper form submission
-              }
-            );
-
-            const result = await response.json();
-
-            if (result.status === "success") {
-              alert("✅ Form submitted successfully!");
-              document.getElementById("userForm").reset();
-            } else {
-              alert(`⚠️ Error: ${result.message}`);
-            }
-          } catch (error) {
-            console.error("Fetch Error:", error);
-            alert("❌ Network error. Please try again.");
-          }
-        });
-    </script>
+    <script></script>
   </body>
 </html>
