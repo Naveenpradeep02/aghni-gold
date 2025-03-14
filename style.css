@@ -259,6 +259,10 @@ input[type="number"] {
   left: -14px;
 }
 @media screen and (max-width: 600px) {
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.642)),
+      url(./img/Background-Image-Aghni-Gold.jpg);
+  }
   .timeline {
     padding: 50px 0px;
   }
