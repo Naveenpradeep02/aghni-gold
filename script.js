@@ -51,6 +51,19 @@ document
   .addEventListener("submit", async function (event) {
     event.preventDefault();
 
+    let submitButton = document.getElementById("submitButton");
+
+    // Disable the button and change text
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Submitting...";
+
+    // Simulate a delay (e.g., 3 seconds) for form processing
+    setTimeout(() => {
+      submitButton.innerHTML = "Submitted ✅";
+      submitButton.classList.remove("bg-yellow-500");
+      submitButton.classList.add("bg-green-500");
+    }, 6000);
+
     const formData = new FormData(this);
 
     try {
@@ -67,6 +80,7 @@ document
       if (result.status === "success") {
         alert("✅ Form submitted successfully!");
         document.getElementById("userForm").reset();
+        location.reload();
       } else {
         alert(`⚠️ Error: ${result.message}`);
       }
@@ -75,11 +89,24 @@ document
       alert("❌ Network error. Please try again.");
     }
   });
+
 document
   .getElementById("userForm2")
   .addEventListener("submit", async function (event) {
     event.preventDefault();
 
+    let submitButton = document.getElementById("submitButton2");
+
+    // Disable the button and change text
+    submitButton.disabled = true;
+    submitButton.innerHTML = "Submitting...";
+
+    // Simulate a delay (e.g., 3 seconds) for form processing
+    setTimeout(() => {
+      submitButton.innerHTML = "Submitted ✅";
+      submitButton.classList.remove("bg-yellow-500");
+      submitButton.classList.add("bg-green-500");
+    }, 6000);
     const formData = new FormData(this);
 
     try {
@@ -96,6 +123,7 @@ document
       if (result.status === "success") {
         alert("✅ Form submitted successfully!");
         document.getElementById("userForm").reset();
+        location.reload();
       } else {
         alert(`⚠️ Error: ${result.message}`);
       }
