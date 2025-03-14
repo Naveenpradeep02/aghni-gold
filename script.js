@@ -35,3 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", toggleFixedSection);
 });
+setTimeout(() => {
+  document.getElementById("consultationForm").classList.remove("hidden");
+}, 10000);
+
+const closeForm = () => {
+  document.getElementById("consultationForm").classList.add("hidden");
+};

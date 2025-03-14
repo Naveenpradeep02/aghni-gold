@@ -11,6 +11,7 @@
 body {
   background: var(--sand-color);
   font-family: "Jost", sans-serif;
+  overflow-x: hidden;
 }
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.642)),
@@ -42,6 +43,16 @@ a {
 .a-text {
   color: #000000;
 }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .heading-color {
   color: #610000;
 }
@@ -94,6 +105,30 @@ a {
 #fixedSection.visible-section {
   opacity: 1;
   transform: translateY(0);
+}
+#consultationForm {
+  background: linear-gradient(rgba(0, 0, 0, 0.632), rgba(0, 0, 0, 0.642));
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+.fixed-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.close {
+  background-color: var(--gold-color);
+  border-radius: 50%;
+  padding: 5px;
+}
+.form-img img {
+  width: 400px;
+  position: absolute;
+  left: 180px;
+  top: -60px;
 }
 /* ========================================== */
 .section-6 {
