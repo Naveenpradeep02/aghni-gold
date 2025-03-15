@@ -43,6 +43,9 @@ a {
 .a-text {
   color: #000000;
 }
+.text-color {
+  color: #fff;
+}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -257,6 +260,56 @@ input[type="number"] {
   border-bottom: 15px solid transparent;
   border-right: 15px solid var(--gold-color);
   left: -14px;
+}
+/* =============================================================== */
+.g-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 40px auto;
+}
+.g-container2 {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 40px auto;
+}
+.review-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(206, 206, 206);
+}
+.review-imgs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.review-imgs img.profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 2px solid #610000;
+}
+.review-rate {
+  display: flex;
+  align-items: center;
+}
+.google {
+  width: 25px;
+}
+.review-name h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #610000;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+.review-star {
+  display: flex;
 }
 @media screen and (max-width: 600px) {
   .hero {
