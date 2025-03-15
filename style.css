@@ -287,12 +287,15 @@ input[type="number"] {
   align-items: center;
   margin-bottom: 10px;
 }
-.review-imgs img.profile {
-  width: 90px;
-  height: 90px;
+.review-imgs .profile {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: contain;
-  border: 2px solid #610000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 .review-rate {
   display: flex;
@@ -343,5 +346,18 @@ input[type="number"] {
     border-right: 15px solid #fff;
     border-left: 0;
     left: -14px;
+  }
+  .g-container {
+    grid-template-columns: 1fr;
+  }
+  .g-container2 {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .review-name h2 {
+    font-size: 24px;
+  }
+  .review-text {
+    font-size: 14px;
   }
 }
